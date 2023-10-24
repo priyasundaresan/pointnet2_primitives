@@ -34,6 +34,11 @@ To run inference and visualize predictions:
 python inference.py
 ```
 
+You should see the input/output as follows; the input is a point cloud annotated with the deprojected keypoint, and the output is the heatmap of offsets, with blue representing the skill waypoint (orientation not visualized). 
+
+![Input](assets/input.png)
+![Output](assets/output.png)
+
 This will visualize the ground truth input point cloud (xyz, color, and a mask for the deprojected keypoint), and the predicted waypoint (position / orientation).
 
 For an example of training a skill parameterized by more than one waypoint, see `train_start_end.py`
