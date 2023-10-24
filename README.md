@@ -22,7 +22,7 @@ Create a conda environment per env.yml (am using `torch=1.9.0+cu102`)
 
 ## Usage
 
-We provide an example dataset for opening different drawer cabinets (top/middle/bottom). Given an image, KITE's grounding module outputs a keypoint for the appropriate drawer handle, and we deproject this keypoint onto the 3D point cloud. This annotated point cloud serves as input to a skill policy, which outputs waypoints (gripper position/orientation) for the robot arm to go to in order to grasp and open the cabinet handle. 
+We provide an example dataset of 20 demonstrations for opening different drawer cabinets (top/middle/bottom). Given an image, KITE's grounding module outputs a keypoint for the appropriate drawer handle, and we deproject this keypoint onto the 3D point cloud. This annotated point cloud serves as input to a skill policy, which outputs waypoints (gripper position/orientation) for the robot arm to go to in order to grasp and open the cabinet handle. 
 
 To train the model:
 ```python
